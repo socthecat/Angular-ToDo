@@ -1,0 +1,5 @@
+<div [ngClass]='setClasses()'>
+    <input (change)='onCheck(card)' [ngModel]='isChecked()' type="checkbox" />
+    <h3>{{ card.title }}</h3>
+    <button (click)='onDelete(card)' class="del">X</button>
+</div>

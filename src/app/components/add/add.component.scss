@@ -1,0 +1,39 @@
+.card-form {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin: 2vw auto;
+    input:not(.button) {
+        background: #ffcbdf;
+        border: 0;
+        padding: 7px 15px;
+        border-radius: 30px;
+        color: #560056;
+        font-size: 16px;
+        font-family: Raleway;
+        margin: 5px 0;
+    }
+    .button:focus, input:focus {
+        box-shadow: 0 0 7px #e4a6da;
+        outline: none;
+    }
+    input:not(.button)::placeholder {
+        color: #92677d;
+    }
+    .button {
+        background-color: #fe81b2;
+        border: 0;
+        border-radius: 30px;
+        padding: 10px 20px;
+        color: #66153e;
+        font-family: Raleway;
+        width: 200px;
+        font-size: 18px;
+        align-self: center;
+        cursor: pointer;
+        text-shadow: 0 0 10px #c80066;
+    }
+    .button:active{
+        transform: scale(.9);
+    }
+}
