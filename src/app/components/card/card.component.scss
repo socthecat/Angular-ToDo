@@ -2,11 +2,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50vw;
+    @media (min-width: 1200px) {
+        width: 50vw;
+    }
+    @media (max-width: 1199px) { 
+        width: 70vw;
+    }
+    @media (max-width: 899px) {
+        width: 80vw;
+    }
+    @media (max-width: 767px) {
+        width: 90vw;
+    }
     margin: 10px auto;
     padding: 5px 15px;
     h3 {
         color: #66153e;
+        margin-left: 15px;
     }
     box-shadow: 0 0 10px #d0a4a9;
     background: #fff;
